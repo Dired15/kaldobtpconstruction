@@ -2,26 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base{
+
+  h1 
+  {
+    @apply text-5xl font-bold;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h2
+  {
+    @apply text-3xl flex flex-col items-center justify-between w-fit text-logoBlue font-bold;
+  }
+
+  h2 div 
+  {
+    @apply w-[50%] border border-4 border-logoOrange mt-2;
+  }
+
+  h3 
+  {
+    @apply text-2xl font-bold flex flex-col  justify-between w-fit;
+  }
+
+  h3 div 
+  {
+    @apply w-[30%] border border-4 border-logoOrange mt-2;
+  }
+
+  p 
+  {
+    @apply text-base text-justify;
+  }
+
+  footer h3
+  {
+    @apply mb-2;
+  }
+
+  footer li
+  {
+    @apply mb-2;
+  }
+
+  /* .delimitation-black
+  {
+    @apply border-solid border-4 border-black;
+  }
+
+  .delimitation-red
+  {
+    @apply border-solid border-4 border-red-700;
+  }
+
+  .delimitation-yellow
+  {
+    @apply border-solid border-4 border-yellow-700;
+  }
+
+  .delimitation-green
+  {
+    @apply border-solid border-4 border-green-700;
+  }
+
+  .delimitation-purple
+  {
+    @apply border-solid border-4 border-purple-700;
+  }
+
+  .delimitation-blue
+  {
+    @apply border-solid border-4 border-blue-700;
+  } */
 }

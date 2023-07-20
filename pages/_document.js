@@ -1,10 +1,14 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+
+
+
+
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html className="delimitation-red w-full " lang="en">
       <Head />
-      <body>
+      <body className=" w-full  delimitation-green ">
         <Main />
         <NextScript />
       </body>
